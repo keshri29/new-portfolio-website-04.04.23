@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "site": "itsmeanurag",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+
+	"website": "itsmeanurag",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

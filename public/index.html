@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Type.js CDN-->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!--Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="icon" href="https://res.cloudinary.com/dsq5spft3/image/upload/v1670701819/images-removebg-preview_cbvndu.png" type="image/icon type">
+
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/bedaa6a20e.js" crossorigin="anonymous"></script>
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="./CSS/Style.css" />
+
+    <!--FireBase SDK-->
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <!--Title-->
+    <title>Developer-resume</title>
+
+</head>
+
+<body>
+
+    <!--Header Section Starting-->
+    <header class="stick">
+        <div class="Nav-Bar">
+
+            <div class="Nav-logo-div">
+                <a href="./index.html"><label class="logo">PORTFOLIO</label></a>
+            </div>
+
+            <ul class="Nav-ul">
+                <li class="Nav-li" id="1"><a href="./index.html" class="Nav-a">Home</a></li>
+                <li class="Nav-li" id="2"><a href="#ProjectSection" class="Nav-a">Project</a></li>
+                <li class="Nav-li" id="3"><a href="#AboutSection" class="Nav-a">About</a></li>
+                <li class="Nav-li" id="4"><a target="_blank" href="https://keshrianurag.netlify.app/"  class="Nav-a">LINK</a></li>
+            </ul>
+
+            <div class="a-div" id="l">
+                <span class="lineg"></span>
+                <span class="lineg"></span>
+                <span class="lineg"></span>
+            </div>
+        </div>
+
+    </header>
+    <!--Header Section Ending-->
+
+    <!--Hero Section Starting-->
+    <section class="pt-5 pb-5 mt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-0 pt-5 pb-5 d-none">
+                    <div class="d-flex justify-content-center">
+                        <div class="round"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex flex-column justify-content-start pt-5 pb-5">
+                    <h1 class="Hero-Heading">Hi 👋, I'm <span class="auto-input"></span></h1>
+                    <p class="Hero-P-tag">I am a MERN Stack Developer <br />
+                        and Passionate about learning new Technologies</p>
+                    <div>
+                        <div class="cc-hero" style="border: 2px solid var(--secondary-color);
+                        box-shadow: 0 0 9px 0 rgba(239, 2, 80, 0.637);background-color: transparent; margin: 2px;">
+                            <a href="https://www.linkedin.com/in/anurag-keshri-aab8a61a7/">
+                                <i class="fa-brands fa-linkedin-in cc" style="color: var(--secondary-color);"></i></a>
+                        </div>
+
+                        <div class="cc-hero" style="border: 2px solid var(--secondary-color);
+                        box-shadow: 0 0 9px 0 rgba(239, 2, 80, 0.637);background-color: transparent; margin: 2px;">
+                            <a href="https://github.com/keshri29">
+                                <i class="fa-brands fa-github cc" style="color: var(--secondary-color);"></i></a>
+                        </div>
+
+                        <div class="cc-hero" style="border: 2px solid var(--secondary-color);
+                        box-shadow: 0 0 9px 0 rgba(239, 2, 80, 0.637); background-color: transparent; margin: 2px;">
+                            <a href="mailto:keshrianurag690@gmail.com">
+                                <i class="fa-solid fa-envelope fa-shake cc" style="color: var(--secondary-color); "></i></a>
+                        </div>             
+                    </div>
+                </div>
+
+                <div class="btn-hero-div col-12">
+                    <a href="#ContactSection"><button class="hero-button-1">Contact Me</button></a>
+
+                    <a href="./Assets/resume.pdf"> 
+                        <button class="hero-button-2">Resume
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 16 16" class="inline-block" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"></path>
+                                <path d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"></path>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Hero Section Ending-->
+
+    <!--About Me Section Starting-->
+    <section class="pt-5 pb-5 About-me-section" id="AboutSection">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-12">
+                    <div class="p-3">
+                        <h2 class="About-heading">About<span class="About-heading-span"> Me</span></h2>
+                        <p class="About-content pt-3">My name is Anurag keshri  and I enjoy creating things that live on the internet. I'm a passionate Full Stack Developer, with strong administrative and communication skills, good attention to detail and the ability to write efficient code using MERN Stack.</p>
+                    </div>
+
+                    <div class="col-12 ">
+                        <div class="xx">
+                            <p class="About-me-Title Active About-Block pt-3" id="skills">Skills</p>
+                            <p class="About-me-Experience About-Block pt-3" id="Experience">Experience</p>
+                            <p class="About-me-Eduction About-Block pt-3" id="Eduction">Education</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 top-container ">
+                        <div class="Skill-Content pt-5 pb-5" id="SkillContent">
+                            <p class="About-p-Tag">Frontend</p>
+                            <p class="About-P-Tag-sub">HTML, CSS, Bootstrap, JavaScript, React<span class="alert">**</span>, Redux<span class="alert">**</span>, Chakra UI<span class="alert">**</span></p>
+
+                            <p class="About-p-Tag">Backend</p>
+                            <p class="About-P-Tag-sub">SQL, FireBase, NodeJS<span class="alert">**</span>
+                                </span>, MongoDB<span class="alert">**</span></p>
+
+                            <p class="About-p-Tag">Programming Language</p>
+                            <p class="About-P-Tag-sub">Python , JavaScript , C, C++</p>
+
+                            <p><span class="alert">**</span>I am Currently learning</p>
+                        </div>
+
+                        <div class="Experience-Content pt-5 pb-5" id="ExperienceContent">
+                            <p class="About-p-Tag">Full-stack web Developer at simtrack</p>
+                            <p class="About-P-Tag-sub"> &#8594; Here i work on some live project of company and i learn so many things.</p>
+                            <p class="About-P-Tag-sub"> &#8594; This is my first internship to get some knowledge about the companies, how they actually working.</p>
+                            <p class="About-p-Tag">Full-stack web Developer at BharatIntern</p>
+                            <p class="About-P-Tag-sub"> &#8594; Here i am working on project regarding link shortner. and  making a Frontend website for company.</p>
+                            <p class="About-P-Tag-sub"> &#8594; This  is the internship in which Currently I am working in.</p>
+                        </div>
+
+                        <div class="Eduction-Content pt-5 pb-5" id="EductionContent">
+                            <p class="About-p-Tag">poornima college of Engineering,jaipur</p>
+                            <p class="About-P-Tag-sub">B.Tech , Computer Science and Engineering</p>
+                            <p>Aug 2020 - sep 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--About Me Section Ending-->
+
+    <!--Skill Section Starting-->
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-12 text-center pt-5 pb-5">
+                    <p class="Skill-heading"><span class="Skill-heading-span">Technical</span> Skills</p>
+                </div>
+
+                <div class="Skills-Div col-3 col-md-2">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewbox="0 0 32 32" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style=color:#66dc0c;">
+                        <path d="M9.633 7.968h3.751v10.514c0 4.738-2.271 6.392-5.899 6.392-0.888 0-2.024-0.148-2.764-0.395l0.42-3.036c0.518 0.173 1.185 0.296 1.925 0.296 1.58 0 2.567-0.716 2.567-3.282v-10.489zM16.641 20.753c0.987 0.518 2.567 1.037 4.171 1.037 1.728 0 2.641-0.716 2.641-1.826 0-1.012-0.79-1.629-2.789-2.32-2.764-0.987-4.59-2.517-4.59-4.961 0-2.838 2.394-4.985 6.293-4.985 1.9 0 3.258 0.37 4.245 0.839l-0.839 3.011c-0.642-0.321-1.851-0.79-3.455-0.79-1.629 0-2.419 0.765-2.419 1.604 0 1.061 0.913 1.53 3.085 2.369 2.937 1.086 4.294 2.616 4.294 4.985 0 2.789-2.122 5.158-6.688 5.158-1.9 0-3.776-0.518-4.714-1.037l0.765-3.085z"></path>
+                    </svg>
+                </div>
+
+                <div class="Skills-Div col-3 col-md-2">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewbox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style=color:#66dc0c;">
+                        <title></title>
+                        <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"></path>
+                    </svg>
+                </div>
+
+                <div class="Skills-Div col-3 col-md-2">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewbox="0 0 34 32" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style=color:#66dc0c;">
+                        <path d="M19.314 15.987c0 1.321-1.071 2.392-2.392 2.392s-2.392-1.071-2.392-2.392c0-1.321 1.071-2.392 2.392-2.392s2.392 1.071 2.392 2.392z"></path>
+                        <path d="M16.922 24.783c1.878 1.826 3.729 2.906 5.221 2.906 0.489 0 0.952-0.103 1.337-0.334 1.337-0.772 1.826-2.701 1.363-5.453-0.077-0.489-0.18-0.977-0.309-1.492 0.514-0.154 0.977-0.309 1.44-0.463 2.598-1.003 4.038-2.392 4.038-3.909 0-1.543-1.44-2.932-4.038-3.909-0.463-0.18-0.926-0.334-1.44-0.463 0.129-0.514 0.232-1.003 0.309-1.492 0.437-2.803-0.051-4.758-1.389-5.53-0.386-0.231-0.849-0.334-1.337-0.334-1.466 0-3.344 1.080-5.221 2.906-1.852-1.826-3.704-2.906-5.195-2.906-0.489 0-0.952 0.103-1.337 0.334-1.337 0.772-1.826 2.701-1.363 5.453 0.077 0.489 0.18 0.977 0.309 1.492-0.514 0.154-0.977 0.309-1.44 0.463-2.598 1.003-4.038 2.392-4.038 3.909 0 1.543 1.44 2.932 4.038 3.909 0.463 0.18 0.926 0.334 1.44 0.463-0.129 0.514-0.232 1.003-0.309 1.492-0.437 2.752 0.051 4.707 1.363 5.453 0.386 0.232 0.849 0.334 1.337 0.334 1.492 0.051 3.344-1.029 5.221-2.829v0zM15.481 21.311c0.463 0.026 0.952 0.026 1.44 0.026s0.977 0 1.44-0.026c-0.463 0.617-0.952 1.183-1.44 1.723-0.489-0.54-0.977-1.106-1.44-1.723zM12.292 18.662c0.257 0.437 0.489 0.849 0.772 1.26-0.797-0.103-1.543-0.232-2.263-0.386 0.232-0.694 0.489-1.415 0.797-2.135 0.206 0.411 0.437 0.849 0.694 1.26zM10.8 12.463c0.72-0.154 1.466-0.283 2.263-0.386-0.257 0.412-0.514 0.823-0.772 1.26s-0.489 0.849-0.694 1.286c-0.334-0.746-0.592-1.466-0.797-2.161zM12.215 15.987c0.334-0.694 0.694-1.389 1.106-2.083 0.386-0.669 0.823-1.337 1.26-2.006 0.772-0.051 1.543-0.077 2.341-0.077 0.823 0 1.595 0.026 2.341 0.077 0.463 0.669 0.874 1.337 1.26 2.006 0.412 0.694 0.772 1.389 1.106 2.083-0.334 0.694-0.694 1.389-1.106 2.083-0.386 0.669-0.823 1.337-1.26 2.006-0.772 0.051-1.543 0.077-2.341 0.077-0.823 0-1.595-0.026-2.341-0.077-0.463-0.669-0.874-1.337-1.26-2.006-0.412-0.695-0.772-1.389-1.106-2.083v0zM22.272 14.598l-0.694-1.286c-0.257-0.437-0.489-0.849-0.772-1.26 0.797 0.103 1.543 0.232 2.263 0.386-0.231 0.72-0.489 1.44-0.797 2.161v0zM22.272 17.376c0.309 0.72 0.566 1.44 0.797 2.135-0.72 0.154-1.466 0.283-2.263 0.386 0.257-0.412 0.514-0.823 0.772-1.26 0.232-0.386 0.463-0.823 0.694-1.26v0zM22.863 26.301c-0.206 0.129-0.463 0.18-0.746 0.18-1.26 0-2.829-1.029-4.372-2.572 0.746-0.797 1.466-1.698 2.186-2.701 1.209-0.103 2.366-0.283 3.447-0.54 0.129 0.463 0.206 0.926 0.283 1.389 0.36 2.186 0.077 3.755-0.797 4.244zM24.201 12.746c2.881 0.823 4.604 2.083 4.604 3.241 0 1.003-1.183 2.006-3.266 2.804-0.412 0.154-0.874 0.309-1.337 0.437-0.334-1.055-0.746-2.135-1.26-3.241 0.514-1.106 0.952-2.186 1.26-3.241v0zM22.143 5.493c0.283 0 0.514 0.051 0.746 0.18 0.849 0.489 1.157 2.032 0.797 4.244-0.077 0.437-0.18 0.9-0.283 1.389-1.080-0.232-2.238-0.412-3.447-0.54-0.694-1.003-1.44-1.903-2.186-2.701 1.543-1.518 3.112-2.572 4.372-2.572zM18.362 10.663c-0.463-0.026-0.952-0.026-1.44-0.026s-0.977 0-1.44 0.026c0.463-0.617 0.952-1.183 1.44-1.723 0.489 0.54 0.977 1.132 1.44 1.723v0zM10.98 5.673c0.206-0.129 0.463-0.18 0.746-0.18 1.26 0 2.829 1.029 4.372 2.572-0.746 0.797-1.466 1.697-2.186 2.701-1.209 0.103-2.366 0.283-3.447 0.54-0.129-0.463-0.206-0.926-0.283-1.389-0.36-2.186-0.077-3.729 0.797-4.244v0zM9.643 19.228c-2.881-0.823-4.604-2.083-4.604-3.241 0-1.003 1.183-2.006 3.266-2.803 0.412-0.154 0.874-0.309 1.337-0.437 0.334 1.055 0.746 2.135 1.26 3.241-0.514 1.106-0.952 2.212-1.26 3.241zM10.183 22.057c0.077-0.437 0.18-0.9 0.283-1.389 1.080 0.232 2.238 0.412 3.447 0.54 0.694 1.003 1.44 1.903 2.186 2.701-1.543 1.517-3.112 2.572-4.372 2.572-0.283 0-0.514-0.051-0.746-0.18-0.875-0.489-1.157-2.058-0.797-4.244z"></path>
+                    </svg>
+                </div>
+
+                <div class="Skills-Div col-3 col-md-2">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewbox="0 0 32 32" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style=color:#66dc0c;">
+                        <path d="M4.665 3.411l2.063 23.176 9.258 2.574 9.284-2.578 2.065-23.172h-22.671zM8.951 8.911l-0.068-0.763h7.107v2.842h-4.005l0.259 2.911h3.746v2.842h-6.341l-0.698-7.833zM22.518 14.665l-0.667 7.483-0.043 0.48-5.822 1.616-5.814-1.616-0.398-4.463h2.849l0.202 2.267 3.163 0.854 3.165-0.856 0.329-3.686h-3.485v-2.842h6.587l-0.069 0.763zM23.032 8.911l-0.129 1.441-0.057 0.639h-6.846v-2.842h7.1l-0.068 0.762z"></path>
+                    </svg>
+                </div>
+
+                <div class="Skills-Div col-3 col-md-2">
+                    <i class="fa-brands fa-bootstrap" style="color:#66dc0c;"></i>
+                </div>
+
+                <div class="Skills-Div col-3 col-md-2">
+                    <i class="fa-brands fa-css3-alt" style=color:#66dc0c;"></i>
+                </div>
+
+                <div class="Skills-Div col-3 col-md-2">
+                    <i class="fa-solid fa-database" style=color:#66dc0c;"></i>
+                </div>
+
+                <div class="Skills-Div col-3 col-md-2">
+                    <i class="fa-brands fa-square-git" style=color:#66dc0c;"></i>
+                </div>
+
+                <div class="Skills-Div col-3 col-md-2">
+                    <i class="fa-brands fa-github" style=color:#66dc0c;"></i>
+                </div>
+
+                <div class="Skills-Div col-3 col-md-2">
+                    <i class="fa-brands fa-node-js" style=color:#66dc0c;"></i>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Skill Me Section Ending-->
+
+    <!--My Porject Section Starting-->
+    <section class="pt-5 pb-5 Project-section" id="ProjectSection">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="content-div text-center pb-5">
+                        <h1 class="Project-heading">My Recent <span class="Project-heading-span">Works</span></h1>
+                        <p>Following projects showcases my skills and experience through my work. Each project is briefly described with links to code repositories on Github. It reflects my ability to work with different technologies, and manage projects effectively.</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-4 pt-5 pb-5">
+                    <div class="My-card p-3">
+                        <div class="">
+                            <img src="./Assets/Screenshot 2023-03-21 094827.png" style="width: 100%; background-size: cover;" />
+                        </div>
+
+                        <div class="content mt-3">
+                            <h3>Personal-Portfolio</h3>
+                            <p>Design and developed an All in One portfolio Platform for Developer</p>
+
+                            <p>- Developed all the components of the Website Single-Handedly From Scratch <br />
+                                - Used Html,Css and JavaScript<br />
+                                - I Used Netlify(a website hosting platform which provide user to live their website) to deploy website<br />
+                                -In this I used Bootstrap to write less code to make our website responsive <br />
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center ">
+                            <!-- <a href="https://www.eduengineering.net/" style="text-decoration:none; color: white;">
+                                <button class="btn btn-success button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewbox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"></path>
+                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"></path>
+                                    </svg>
+                                    <p class="pl-2 d-inline">Live Demo</p>
+                                </button> -->
+                            </a>
+
+                            <a href="https://github.com/keshri29/self-deployed-portfolio" style="text-decoration:none; color: white;">
+                                <button class="btn btn-dark ml-2 button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewbox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                    </svg>
+                                    <p class="pl-2 d-inline">Git Hub</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 pt-5">
+                    <div class="My-card p-3">
+                        <div class="">
+                            <img src="./Assets/Screenshot 2023-03-22 100322.png" style="width: 100%; background-size: cover;" />
+                        </div>
+
+                        <div class="content mt-3">
+                            <h3>React-Portfolio</h3>
+                            <p>I make this portfolio website using React(this is my first react portfolio website)</p>
+
+                            <p> -In this website I used simply components to make  this portfolio website<br />
+                                -Implemented react components by using JavaScript event listeners and updated UI dynamically by using JavaScript DOM operations.<br />
+                                -Used Arrays, Objects and their methods during portfolio website.One page application which takes less time to reload the webpage and its components.</p>
+                        </div>
+
+                        <div class="d-flex justify-content-center ">
+                            <!-- <a href="https://venkatmastercoder.github.io/TodoList/" style="text-decoration:none; color: white;">
+                                <button class="btn btn-success button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewbox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"></path>
+                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"></path>
+                                    </svg>
+                                    <p class="pl-2 d-inline">Live Demo</p>
+                                </button>
+                            </a> -->
+
+                            <a href="https://github.com/keshri29?tab=repositories" style="text-decoration:none; color: white;">
+                                <button class="btn btn-dark ml-2 button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewbox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                    </svg>
+                                    <p class="pl-2 d-inline">Git Hub</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 pt-5">
+                    <div class="My-card p-3">
+                        <div class="">
+                            <img src="./Assets/port1.png" style="width: 100%; background-size: cover;" />
+                        </div>
+
+                        <div class="content mt-3">
+                            <h3>Food-ordering website</h3>
+                            <p>Developed a responsive Food-ordering website for food products where user can see list of products.</p>
+
+                            <p>
+                                - Designed page using HTML elements ,footer elements by using different bootstrap components to show different sections in the website. <br />
+                                - Implemented responsiveness by using Bootstrap grid system and flex classes and CSS box model properties.</p>
+
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                        </div>
+
+                        <div class="d-flex justify-content-center ">
+                            <!-- <a href="https://venkatmastercoder.github.io/VR-Website/" style="text-decoration:none; color: white;">
+                                <button class="btn btn-success button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewbox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"></path>
+                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"></path>
+                                    </svg>
+                                    <p class="pl-2 d-inline">Live Demo</p>
+                                </button>
+                            </a> -->
+
+                            <a href="https://github.com/keshri29/restaurants" style="text-decoration:none; color: white;">
+                                <button class="btn btn-dark ml-2 button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewbox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                    </svg>
+
+                                    <p class="pl-2 d-inline">Git Hub</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+    <!--My Porject Section Ending-->
+
+    <!--My Services Starting-->
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 ">
+                    <div class="Servies-heading-div">
+                        <h2 class="pb-2 Servies-heading">My <span class="Servies-heading-span">Services</span></h2>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-4 pt-5">
+                    <div class="p-4 My-service-card1 Effect Active">
+                        <div class="pt-2 pb-3">
+                            <i class="fas fa-crop-alt"></i>
+
+                        </div>
+                        <h2 class="pt-2 pb-2 My-service-heading">MERN Developer</h2>
+
+                        <p class="pt-2 pb-2 My-service-content">I'm a Web Developer, I love to create beautiful and functional websites.And I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 pt-5">
+                    <div class="p-4 My-service-card2">
+                        <div class="pt-2 pb-3">
+                            <i class="fas fa-code"></i>
+
+                        </div>
+                        <h2 class="pt-2 pb-2 My-service-heading">Responsive Web design</h2>
+
+                        <p class="pt-2 pb-2">Responsive Web design is the approach that suggests that design and development should respond to the user's behaviour and environment based on screen size, platform and orientation.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4 pt-5">
+                    <div class="p-4 My-service-card3">
+                        <div class="pt-2 pb-3 ">
+                            <i class="fas fa-crop-alt"></i>
+                        </div>
+
+                        <h2 class="pt-2 pb-2 My-service-heading">Customisable Layouts</h2>
+
+                        <p>Customisable sites are templates with set layouts. You may be able to change photos and colors, but your site will look similar to many other sites due to the template.I Make unique templates</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--My Services Starting Ending-->
+
+    <!--Contact From Starting-->
+    <section class="pt-5 pb-5" id="ContactSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 pt-5 pb-5 ss1">
+                    <h4 class="form-heading">Contact <span class="form-heading-span">Me</span></h4>
+                    <a href="mailto:venkatesangunaraj@gmail.com"><p class="form-sub-1"><i class="fa-regular fa-envelope"></i> keshrianurag690@gmail.com</p></a>
+                    
+                    <a href="https://www.linkedin.com/in/anurag-keshri-aab8a61a7/"><p class="form-sub"><i class="fa-brands fa-linkedin-in"></i> keshri-tech</p></a>
+                    
+
+                    <div class="d-flex justify-content-between">
+
+                    </div>
+
+                    <a href="./Assets/resume.pdf"><button class="form-button">Download CV</button></a>
+                </div>
+
+                <div class="col-12 col-md-6 pt-5 pb-5 ss2">
+                    <form id="ReqForm">
+                        <div>
+                            <input placeholder="Your Name" id="Yourname" class="form-control form-style" />
+                            <p id="errorName"></p>
+                        </div>
+
+                        <div class="mt-3">
+                            <input placeholder="Your Email" id="YourEmail" class="form-control" />
+                            <p id="errorEmail"></p>
+                        </div>
+
+                        <div class="mt-3">
+                            <textarea name="" id="YourMessage" cols="50" rows="5" placeholder="Your Message" class="textbox"></textarea>
+                            <p id="errorMessage"></p>
+                        </div>
+
+                        <p id="messagecontent" style="color: white;"></p>
+
+                        <button type="submit" id="sumbitBtn" class="form-button">submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact From Ending-->
+
+    <a class="scroll-top" id="toptob">
+        <i class="fa-solid fa-arrow-up" style="color: var(--white-color);"></i>
+    </a>
+
+    <!--Footer Starting-->
+    <footer class="pt-1 pb-1 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="pt-3 text-center footer-content">
+                        <p>Design and Delevoped By Anurag keshri</p>
+                    </div>
+
+                    <div class="text-center pb-2">
+                        <a href="https://www.linkedin.com/in/anurag-keshri-aab8a61a7/"><i class="fa-brands fa-linkedin-in ml-2" style="color:white;"></i></a>
+                        <a href="https://twitter.com/keshri029"><i class="fa-brands fa-twitter ml-2" style="color:white;"></i></a>
+                        <a href="https://github.com/keshri29"><i class="fa-brands fa-github ml-2" style="color:white;"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <!--Footer Ending-->
+
+    <!--External Javascript-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="./JS/form.js"></script>
+    <script src="./JS/script.js"></script>
+
+</body>
+
+</html>
